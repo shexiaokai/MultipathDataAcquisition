@@ -1,5 +1,8 @@
 --cpu Cortex-M0
 ".\objects\main.o"
+".\objects\delay.o"
+".\objects\led.o"
+".\objects\tft.o"
 ".\objects\system_stm32f0xx.o"
 ".\objects\startup_stm32f030.o"
 --strict --scatter ".\Objects\MultipathDataAcquisition.sct"

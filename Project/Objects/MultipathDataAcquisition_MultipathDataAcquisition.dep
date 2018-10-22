@@ -1,12 +1,54 @@
 Dependencies for Project 'MultipathDataAcquisition', Target 'MultipathDataAcquisition': (DO NOT MODIFY !)
-F (..\User\Main.c)(0x5BCB4AF7)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\Header -I ..\Bsp-IE:\Project\多路采集系统\MultipathDataAcquisition\Program\MultipathDataAcquisition\Project\RTE-ID:\Work\MDK5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-ID:\Work\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x8-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\User\Main.c)(0x5BCE075B)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\Header -I ..\Bsp-IE:\Project\多路采集系统\MultipathDataAcquisition\Program\MultipathDataAcquisition\Project\RTE-ID:\Work\MDK5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-ID:\Work\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x8-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\Header\Main.h)(0x5BCDFC2C)
 I (..\Bsp\stm32f0xx.h)(0x5BCB4AC3)
 I (..\Bsp\core_cm0.h)(0x547D9682)
 I (D:\Work\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
 I (..\Bsp\core_cmInstr.h)(0x547D9682)
 I (..\Bsp\core_cmFunc.h)(0x547D9682)
 I (..\Bsp\system_stm32f0xx.h)(0x54808D0E)
+I (..\Header\Delay.h)(0x5BCD9257)
+I (..\Header\LED.h)(0x5BCCA6ED)
+I (..\Header\TFT.h)(0x5BCDCECC)
+F (..\User\Delay.c)(0x5BCD924C)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\Header -I ..\Bsp-IE:\Project\多路采集系统\MultipathDataAcquisition\Program\MultipathDataAcquisition\Project\RTE-ID:\Work\MDK5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-ID:\Work\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x8-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+I (..\Header\Delay.h)(0x5BCD9257)
+I (..\Header\Main.h)(0x5BCDFC2C)
+I (..\Bsp\stm32f0xx.h)(0x5BCB4AC3)
+I (..\Bsp\core_cm0.h)(0x547D9682)
+I (D:\Work\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\Bsp\core_cmInstr.h)(0x547D9682)
+I (..\Bsp\core_cmFunc.h)(0x547D9682)
+I (..\Bsp\system_stm32f0xx.h)(0x54808D0E)
+I (..\Header\LED.h)(0x5BCCA6ED)
+I (..\Header\TFT.h)(0x5BCDCECC)
+F (..\App\LED.c)(0x5BCDD11F)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\Header -I ..\Bsp-IE:\Project\多路采集系统\MultipathDataAcquisition\Program\MultipathDataAcquisition\Project\RTE-ID:\Work\MDK5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-ID:\Work\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x8-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (..\Header\LED.h)(0x5BCCA6ED)
+I (..\Header\Main.h)(0x5BCDFC2C)
+I (..\Bsp\stm32f0xx.h)(0x5BCB4AC3)
+I (..\Bsp\core_cm0.h)(0x547D9682)
+I (D:\Work\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\Bsp\core_cmInstr.h)(0x547D9682)
+I (..\Bsp\core_cmFunc.h)(0x547D9682)
+I (..\Bsp\system_stm32f0xx.h)(0x54808D0E)
+I (..\Header\Delay.h)(0x5BCD9257)
+I (..\Header\TFT.h)(0x5BCDCECC)
+F (..\App\TFT.c)(0x5BCE0505)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\Header -I ..\Bsp-IE:\Project\多路采集系统\MultipathDataAcquisition\Program\MultipathDataAcquisition\Project\RTE-ID:\Work\MDK5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-ID:\Work\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x8-o .\objects\tft.o --omf_browse .\objects\tft.crf --depend .\objects\tft.d)
+I (..\Header\TFT.h)(0x5BCDCECC)
+I (..\Header\Main.h)(0x5BCDFC2C)
+I (..\Bsp\stm32f0xx.h)(0x5BCB4AC3)
+I (..\Bsp\core_cm0.h)(0x547D9682)
+I (D:\Work\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\Bsp\core_cmInstr.h)(0x547D9682)
+I (..\Bsp\core_cmFunc.h)(0x547D9682)
+I (..\Bsp\system_stm32f0xx.h)(0x54808D0E)
+I (..\Header\Delay.h)(0x5BCD9257)
+I (..\Header\LED.h)(0x5BCCA6ED)
+I (..\Header\TFT_Library.h)(0x5BCE02FA)
+F (..\Header\Delay.h)(0x5BCD9257)()
 F (..\Bsp\stm32f0xx.h)(0x5BCB4AC3)()
+F (..\Header\Main.h)(0x5BCDFC2C)()
+F (..\Header\LED.h)(0x5BCCA6ED)()
+F (..\Header\TFT.h)(0x5BCDCECC)()
 F (..\Bsp\system_stm32f0xx.c)(0x5482190B)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\Header -I ..\Bsp-IE:\Project\多路采集系统\MultipathDataAcquisition\Program\MultipathDataAcquisition\Project\RTE-ID:\Work\MDK5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-ID:\Work\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x8-o .\objects\system_stm32f0xx.o --omf_browse .\objects\system_stm32f0xx.crf --depend .\objects\system_stm32f0xx.d)
 I (..\Bsp\stm32f0xx.h)(0x5BCB4AC3)
 I (..\Bsp\core_cm0.h)(0x547D9682)

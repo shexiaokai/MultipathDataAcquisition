@@ -1,0 +1,14 @@
+.\objects\delay.o: ..\User\Delay.c
+.\objects\delay.o: ..\Header\Delay.h
+.\objects\delay.o: ..\Header\Main.h
+.\objects\delay.o: ..\Bsp\stm32f0xx.h
+.\objects\delay.o: ..\Bsp\core_cm0.h
+.\objects\delay.o: D:\Work\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\delay.o: ..\Bsp\core_cmInstr.h
+.\objects\delay.o: ..\Bsp\core_cmFunc.h
+.\objects\delay.o: ..\Bsp\system_stm32f0xx.h
+.\objects\delay.o: ..\Bsp\core_cm0.h
+.\objects\delay.o: ..\Header\Delay.h
+.\objects\delay.o: ..\Header\LED.h
+.\objects\delay.o: ..\Header\Main.h
+.\objects\delay.o: ..\Header\TFT.h

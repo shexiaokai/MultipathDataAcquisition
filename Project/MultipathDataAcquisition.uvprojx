@@ -88,7 +88,7 @@
             <nStopA1X>0</nStopA1X>
             <nStopA2X>0</nStopA2X>
           </AfterMake>
-          <SelectedForBatchBuild>0</SelectedForBatchBuild>
+          <SelectedForBatchBuild>1</SelectedForBatchBuild>
           <SVCSIdString></SVCSIdString>
         </TargetCommonOption>
         <CommonProperty>
@@ -132,12 +132,12 @@
             <UseExternalTool>0</UseExternalTool>
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
-            <Capability>0</Capability>
-            <DriverSelection>-1</DriverSelection>
+            <Capability>1</Capability>
+            <DriverSelection>4096</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -384,18 +384,55 @@
               <FileType>1</FileType>
               <FilePath>..\User\Main.c</FilePath>
             </File>
+            <File>
+              <FileName>Delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Delay.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>App</GroupName>
+          <Files>
+            <File>
+              <FileName>LED.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\LED.c</FilePath>
+            </File>
+            <File>
+              <FileName>TFT.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\TFT.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>Header</GroupName>
           <Files>
             <File>
+              <FileName>Delay.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Header\Delay.h</FilePath>
+            </File>
+            <File>
               <FileName>stm32f0xx.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Bsp\stm32f0xx.h</FilePath>
+            </File>
+            <File>
+              <FileName>Main.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Header\Main.h</FilePath>
+            </File>
+            <File>
+              <FileName>LED.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Header\LED.h</FilePath>
+            </File>
+            <File>
+              <FileName>TFT.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Header\TFT.h</FilePath>
             </File>
           </Files>
         </Group>
