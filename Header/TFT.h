@@ -14,9 +14,12 @@
 #define TFT_RST_CLR 	GPIOB->ODR &= ~GPIO_ODR_4
 #define TFT_CS_SET 		GPIOB->ODR |=  GPIO_ODR_3
 #define TFT_CS_CLR 		GPIOB->ODR &= ~GPIO_ODR_3
+#define TFT_SDA_READ 	GPIOB->IDR &GPIO_IDR_6
 
 #define LCD_X_SIZE	        176
 #define LCD_Y_SIZE	        220
+
+#define TFT_DELAY_1US		Delay_us(1)
 
 #define X_MAX_PIXEL	        LCD_Y_SIZE
 #define Y_MAX_PIXEL	        LCD_X_SIZE
@@ -35,6 +38,7 @@ void TFT_SetRegion(u8 xStar, u8 yStar,u8 xEnd,u8 yEnd);
 void TFT_Display_Char(u16,u16,char,u16,u16);
 void TFT_Display_Str(u16 x,u16 y,char *str,u16 Color,u16 BackColor);
 
+//u16 TFT_ReadData_16Bit(void);
 
 
 #endif

@@ -5,3 +5,6 @@
 .\objects\system_stm32f0xx.o: ..\Bsp\core_cmInstr.h
 .\objects\system_stm32f0xx.o: ..\Bsp\core_cmFunc.h
 .\objects\system_stm32f0xx.o: ..\Bsp\system_stm32f0xx.h
+.\objects\system_stm32f0xx.o: ..\Bsp\stm32f0xx_conf.h
+.\objects\system_stm32f0xx.o: ..\Bsp\stm32f0xx_misc.h
+.\objects\system_stm32f0xx.o: ..\Bsp\stm32f0xx.h

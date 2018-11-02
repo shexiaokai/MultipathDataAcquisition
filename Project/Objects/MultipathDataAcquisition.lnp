@@ -1,9 +1,12 @@
 --cpu Cortex-M0
 ".\objects\main.o"
 ".\objects\delay.o"
+".\objects\touch.o"
 ".\objects\led.o"
+".\objects\bk2425.o"
 ".\objects\tft.o"
 ".\objects\system_stm32f0xx.o"
+".\objects\stm32f0xx_misc.o"
 ".\objects\startup_stm32f030.o"
 --strict --scatter ".\Objects\MultipathDataAcquisition.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols

@@ -333,7 +333,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define></Define>
+              <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
               <IncludePath>..\Header;..\Bsp</IncludePath>
             </VariousControls>
@@ -389,6 +389,11 @@
               <FileType>1</FileType>
               <FilePath>..\User\Delay.c</FilePath>
             </File>
+            <File>
+              <FileName>Touch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Touch.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -398,6 +403,11 @@
               <FileName>LED.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\App\LED.c</FilePath>
+            </File>
+            <File>
+              <FileName>BK2425.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\BK2425.c</FilePath>
             </File>
             <File>
               <FileName>TFT.c</FileName>
@@ -434,11 +444,26 @@
               <FileType>5</FileType>
               <FilePath>..\Header\TFT.h</FilePath>
             </File>
+            <File>
+              <FileName>Touch.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Header\Touch.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>Bsp</GroupName>
           <Files>
+            <File>
+              <FileName>stm32f0xx_conf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Bsp\stm32f0xx_conf.h</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_misc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Bsp\stm32f0xx_misc.h</FilePath>
+            </File>
             <File>
               <FileName>system_stm32f0xx.c</FileName>
               <FileType>1</FileType>
@@ -453,6 +478,11 @@
               <FileName>core_cm0.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Bsp\core_cm0.h</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_misc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Bsp\stm32f0xx_misc.c</FilePath>
             </File>
             <File>
               <FileName>startup_stm32f030.s</FileName>

@@ -7,8 +7,12 @@
 .\objects\led.o: ..\Bsp\core_cmInstr.h
 .\objects\led.o: ..\Bsp\core_cmFunc.h
 .\objects\led.o: ..\Bsp\system_stm32f0xx.h
+.\objects\led.o: ..\Bsp\stm32f0xx_conf.h
+.\objects\led.o: ..\Bsp\stm32f0xx_misc.h
+.\objects\led.o: ..\Bsp\stm32f0xx.h
 .\objects\led.o: ..\Bsp\core_cm0.h
 .\objects\led.o: ..\Header\Delay.h
 .\objects\led.o: ..\Header\Main.h
 .\objects\led.o: ..\Header\LED.h
+.\objects\led.o: ..\Header\Touch.h
 .\objects\led.o: ..\Header\TFT.h
