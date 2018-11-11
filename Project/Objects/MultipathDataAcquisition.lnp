@@ -7,7 +7,7 @@
 ".\objects\tft.o"
 ".\objects\system_stm32f0xx.o"
 ".\objects\stm32f0xx_misc.o"
-".\objects\startup_stm32f030.o"
+".\objects\startup_stm32f030x8.o"
 --strict --scatter ".\Objects\MultipathDataAcquisition.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

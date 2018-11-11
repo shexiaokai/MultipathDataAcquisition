@@ -4,6 +4,9 @@
 
 #include "Main.h"
 
+
+#define TOUCH_THRESHOLD_VALUE  	0x50
+
 #define TOUCH_GPIO_INIT			GPIOA->MODER |= GPIO_MODER_MODER12_0;\
 								GPIOC->ODR &= ~(GPIO_ODR_6|GPIO_ODR_7|GPIO_ODR_8|GPIO_ODR_9)
 				
@@ -18,8 +21,11 @@
 #define	 TOUCH_COM_CLR			GPIOA->ODR &= ~GPIO_ODR_12;
 
 
-#define TOUCH_DELAY_1us 		Delay_us(1)
+#define TOUCH_DELAY_1us 		Delay1us()
 
 void Touch_Init(void);
+
+
+
 
 #endif

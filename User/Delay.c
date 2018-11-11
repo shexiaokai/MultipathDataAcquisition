@@ -24,4 +24,11 @@ void Delay_ms(u16 t)
 		Delay_us(1000);
 	}
 }
+
+void Delay1us(void)   //Îó²î 0us
+{
+    unsigned char a,b;
+    for(b=1;b>0;b--)
+        for(a=3;a>0;a--);
+}
 	

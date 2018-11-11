@@ -14,5 +14,6 @@
 .\objects\delay.o: ..\Header\Delay.h
 .\objects\delay.o: ..\Header\LED.h
 .\objects\delay.o: ..\Header\Main.h
+.\objects\delay.o: ..\Header\BK2425.h
 .\objects\delay.o: ..\Header\Touch.h
 .\objects\delay.o: ..\Header\TFT.h

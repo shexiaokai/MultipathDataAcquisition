@@ -12,7 +12,12 @@
 #define GREEN_LED_UP  	GPIOF->ODR &= ~GPIO_ODR_6
 #define GREEN_LED_OFF  	GPIOF->ODR |=  GPIO_ODR_6
 
+//¶¨Ê±Æ÷Æô¶¯
+#define LEDEN 			TIM6->CR1|= TIM_CR1_CEN	
 
+
+
+						
 void LED_Init(void);
 
 

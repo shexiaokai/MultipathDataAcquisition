@@ -14,6 +14,7 @@
 .\objects\tft.o: ..\Header\Delay.h
 .\objects\tft.o: ..\Header\Main.h
 .\objects\tft.o: ..\Header\LED.h
+.\objects\tft.o: ..\Header\BK2425.h
 .\objects\tft.o: ..\Header\Touch.h
 .\objects\tft.o: ..\Header\TFT.h
 .\objects\tft.o: ..\Header\TFT_Library.h

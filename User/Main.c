@@ -5,23 +5,37 @@ int main()
 {
 	
 	void Init(void);
-	
-	Init();
-	
+	u8 a=0;
+	Init();	
+	BK2425_TX_Mode(); 
 	GPIOB->MODER |= GPIO_MODER_MODER3_0|GPIO_MODER_MODER4_0|GPIO_MODER_MODER5_0|GPIO_MODER_MODER6_0|GPIO_MODER_MODER7_0;
 	// Output open-drain
 	GPIOB->OTYPER|=GPIO_OTYPER_OT_3|GPIO_OTYPER_OT_4|GPIO_OTYPER_OT_5|GPIO_OTYPER_OT_6|GPIO_OTYPER_OT_7;
 	//Pull-up
 	GPIOB->PUPDR|=GPIO_PUPDR_PUPDR3_0|GPIO_PUPDR_PUPDR4_0|GPIO_PUPDR_PUPDR5_0|GPIO_PUPDR_PUPDR6_0|GPIO_PUPDR_PUPDR7_0;
 	
+	GPIOB->MODER |= GPIO_MODER_MODER0_0;
 	
-	//GPIOB->MODER|=GPIO_MODER_MODER0_0;
-	//GPIOB->ODR	|=GPIO_ODR_0;
-
+	GPIOB->ODR   |= GPIO_ODR_0;
 	
 	while(1)
 	{
-
+		
+		a=BK2425_TxPacket(BK2425_tx_buf);
+		if(a==0xFF)
+			led_rgb[0]=255;
+		
+		else if(a==0x10)
+		{
+			led_rgb[1]=255;
+			led_rgb[2]=0;
+			
+		}
+		else
+			led_rgb[2]=255;
+		Delay_ms(1000);
+		
+		
 	}
 		;
 }
@@ -38,8 +52,14 @@ void Init(void)
 	Delay_Init();
 	LED_Init();			
 	Touch_Init();		//´¥Ãþ°´¼ü³õÊ¼»¯
+	BK2425_Init();
+	
 	//TFT_Init();
-	GREEN_LED_UP;
+	led_rgb[1]=255;
+	Delay_ms(500);
+	led_rgb[1]=0;
+	
+	
 }
 
 /*******************************************************
@@ -85,6 +105,8 @@ void Peripheral_Clock_Enable(void)
 	RCC->AHBENR|=RCC_AHBENR_GPIOCEN;	//GPIOA clock enable
 	RCC->AHBENR|=RCC_AHBENR_GPIOFEN;	//GPIOF clock enable
 	RCC->APB1ENR|=RCC_APB1ENR_TIM3EN;	//TIM3 	clock enable
+	RCC->APB1ENR|=RCC_APB1ENR_TIM6EN;
+	
 }
 
 

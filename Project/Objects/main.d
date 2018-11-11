@@ -13,5 +13,6 @@
 .\objects\main.o: ..\Header\Delay.h
 .\objects\main.o: ..\Header\Main.h
 .\objects\main.o: ..\Header\LED.h
+.\objects\main.o: ..\Header\BK2425.h
 .\objects\main.o: ..\Header\Touch.h
 .\objects\main.o: ..\Header\TFT.h
